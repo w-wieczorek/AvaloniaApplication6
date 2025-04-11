@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AvaloniaApplication6.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication6.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaloniaApplication6">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="10">
+            <Button Command="{Binding OnConnect}" Margin="20,0,20,0">
+                Connect to database
+            </Button>
+            <Button Command="{Binding OnDisconnect}" Margin="0,0,20,0">
+                Close the connection
+            </Button>
+            <CalendarDatePicker SelectedDateChanged="CalendarDatePicker_OnSelectedDateChanged" />
+        </StackPanel>
+        <DataGrid DockPanel.Dock="Bottom" Margin="20" ItemsSource="{Binding People}"
+                  IsReadOnly="True"
+                  CanUserResizeColumns="True"
+                  CanUserSortColumns="False"
+                  GridLinesVisibility="All"
+                  BorderThickness="1" BorderBrush="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id"  Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Id2" Binding="{Binding Id_cond}" />
+                <DataGridTextColumn Header="Date and time" Binding="{Binding DtLastModified}" />
+                <DataGridTextColumn Header="Is deleted"  Binding="{Binding BIsDeleted}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+
+</Window>
