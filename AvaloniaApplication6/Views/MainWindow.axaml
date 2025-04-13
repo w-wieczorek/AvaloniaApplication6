@@ -25,17 +25,27 @@
             </Button>
             <CalendarDatePicker SelectedDateChanged="CalendarDatePicker_OnSelectedDateChanged" />
         </StackPanel>
-        <DataGrid DockPanel.Dock="Bottom" Margin="20" ItemsSource="{Binding People}"
+        <DataGrid DockPanel.Dock="Bottom" Margin="20" 
+                  ItemsSource="{Binding People}"
+                  AutoGenerateColumns="False" VerticalAlignment="Stretch"
                   IsReadOnly="True"
                   CanUserResizeColumns="True"
                   CanUserSortColumns="False"
                   GridLinesVisibility="All"
                   BorderThickness="1" BorderBrush="Gray">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id"  Binding="{Binding Id}"/>
-                <DataGridTextColumn Header="Id2" Binding="{Binding Id_cond}" />
-                <DataGridTextColumn Header="Date and time" Binding="{Binding DtLastModified}" />
-                <DataGridTextColumn Header="Is deleted"  Binding="{Binding BIsDeleted}"/>
+                <DataGridTextColumn Header="Id"  
+                                    Width="1*"
+                                    Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Id2" 
+                                    Width="1*"
+                                    Binding="{Binding Id_cond}" />
+                <DataGridTextColumn Header="Date and time" 
+                                    Width="3*"
+                                    Binding="{Binding DtLastModified}" />
+                <DataGridTextColumn Header="Is deleted"  
+                                    Width="1*"
+                                    Binding="{Binding BIsDeleted}"/>
             </DataGrid.Columns>
         </DataGrid>
     </DockPanel>

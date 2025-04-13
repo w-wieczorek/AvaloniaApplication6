@@ -15,7 +15,7 @@ public class PeopleViaSQLite : IAccessToPeople
     public PeopleViaSQLite()
     {
         _connection = new SQLiteConnection();
-        _connection.ConnectionString = @"Data Source=d:\sqlite\database.db;Version=3;";    
+        _connection.ConnectionString = @"Data Source=c:\temp\database.db;Version=3;";    
     }
     
     public bool Connect()

@@ -2812,32 +2812,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ggody\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repos\\AvaloniaApplication6\\AvaloniaApplication6\\AvaloniaApplication6.csproj",
+      "projectUniqueName": "C:\\zajecia\\AvaloniaApplication6\\AvaloniaApplication6\\AvaloniaApplication6.csproj",
       "projectName": "AvaloniaApplication6",
-      "projectPath": "D:\\repos\\AvaloniaApplication6\\AvaloniaApplication6\\AvaloniaApplication6.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\AvaloniaApplication6\\AvaloniaApplication6\\obj\\",
+      "projectPath": "C:\\zajecia\\AvaloniaApplication6\\AvaloniaApplication6\\AvaloniaApplication6.csproj",
+      "packagesPath": "C:\\Users\\ggody\\.nuget\\packages\\",
+      "outputPath": "C:\\zajecia\\AvaloniaApplication6\\AvaloniaApplication6\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ggody\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2919,7 +2911,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
